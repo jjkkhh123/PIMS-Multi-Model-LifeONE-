@@ -40,7 +40,7 @@
 ## 시스템 아키텍처  
 아래는 시스템의 3계층 (View Layer, Service Layer, Data Layer) 및 데이터 파이프라인 흐름을 나타낸 다이어그램입니다.
 
-![시스템 아키텍처 다이어그램](./images/system_architecture.png)  
+![시스템 아키텍처 다이어그램]("images/system_architecture.png")  
 
 ### 데이터 파이프라인 흐름  
 1. **입력(Input)**: 사용자 → 텍스트 | 음성 | 이미지  
