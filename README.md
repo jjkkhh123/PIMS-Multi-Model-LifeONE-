@@ -115,8 +115,8 @@ index.tsx                 # 애플리케이션 진입점
 이 프로젝트는 MIT 라이선스를 따릅니다.
 
 ## 연락처 
-해당 프로젝트는 팀 프로젝트 임을 알려드립니다. 
-이진수 : jjkkhh456@naver.com
-김하은 : ha2un0908@naver.com
-김미소 : misosmile0306@naver.com
-김동선 : es4135@naver.com
+해당 프로젝트는 팀 프로젝트 임을 알려드립니다.    
+이진수 : jjkkhh456@naver.com   
+김하은 : ha2un0908@naver.com   
+김미소 : misosmile0306@naver.com   
+김동선 : es4135@naver.com    
