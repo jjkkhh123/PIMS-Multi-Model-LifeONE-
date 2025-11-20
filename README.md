@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 [![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue.svg)](https://www.typescriptlang.org/)  
 
+<img src="https://github.com/jjkkhh123/PIMS-Multi-Model-LifeONE-/blob/main/images/main_page.png" width="600" height="600" />
+
 ## 한줄 소개  
 “멀티모달 입력 기반 대화형 AI 파이프라인을 활용한 개인생활관리 앱”  
 
