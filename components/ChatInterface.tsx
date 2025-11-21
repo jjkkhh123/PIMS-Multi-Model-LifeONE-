@@ -190,11 +190,11 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, onSendMe
               </div>
             ) : (
               <div key={msg.id} className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}>
-                  <div className={`max-w-lg lg:max-w-xl p-3 rounded-lg ${msg.role === 'user' ? 'bg-cyan-500 text-white' : 'bg-gray-200 text-gray-800'}`}>
+                  <div className={`max-w-[85%] md:max-w-lg lg:max-w-xl p-3 rounded-lg ${msg.role === 'user' ? 'bg-cyan-500 text-white' : 'bg-gray-200 text-gray-800'}`}>
                       {msg.imageUrl && (
-                          <img src={msg.imageUrl} alt="upload" className="rounded-md mb-2 max-w-xs" />
+                          <img src={msg.imageUrl} alt="upload" className="rounded-md mb-2 max-w-full" />
                       )}
-                      <p className="whitespace-pre-wrap">{msg.text}</p>
+                      <p className="whitespace-pre-wrap break-all">{msg.text}</p>
                       
                       {/* Web Search Sources Display */}
                       {msg.role === 'model' && msg.webSearchSources && msg.webSearchSources.length > 0 && (

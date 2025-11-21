@@ -370,14 +370,18 @@ export const CalendarView: React.FC<CalendarViewProps> = ({
               if (displayedItemCount >= MAX_ITEMS_TO_SHOW) return null;
               displayedItemCount++;
               const category = categories.find(c => c.id === item.categoryId);
-              const itemColor = category?.color || '#a1a1aa';
+              const itemColor = category?.color || '#e5e7eb';
+
+              const isBgLight = isLight(itemColor);
+              const textColor = isBgLight ? 'text-gray-800' : 'text-white';
+              const subTextColor = isBgLight ? 'text-gray-600' : 'text-white/80';
+
               return (
-                 <div key={item.id} className="bg-gray-100 p-1.5 rounded text-xs flex items-start gap-1.5">
-                    <span className="w-2 h-2 rounded-full mt-1 flex-shrink-0" style={{backgroundColor: itemColor}}></span>
-                    <div className="flex-grow min-w-0">
-                      <p className="font-semibold text-gray-800 truncate">{item.title}</p>
+                 <div key={item.id} className="p-1.5 rounded text-xs" style={{backgroundColor: itemColor}}>
+                    <div className="min-w-0">
+                      <p className={`font-semibold truncate ${textColor}`}>{item.title}</p>
                       {item.time && 
-                        <div className="flex items-center gap-1 text-gray-500 truncate">
+                        <div className={`flex items-center gap-1 truncate ${subTextColor}`}>
                           <ClockIcon className="h-3 w-3 flex-shrink-0" />
                           <span>{item.time}</span>
                         </div>
